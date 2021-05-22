@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   text: {
+    flex: 1,
     borderWidth: 1,
     borderColor: 'blue',
     borderColor: 'red',
