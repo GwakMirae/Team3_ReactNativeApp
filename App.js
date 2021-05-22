@@ -86,12 +86,12 @@ export default class App extends React.Component {
 
   renderItem({ name }) {
     return (
-      <View style={styles.item}>
+      <View style={styles.item} key={name}>
         <Text style={styles.text}>{name}</Text>
       </View>
     );
   }
-  
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
