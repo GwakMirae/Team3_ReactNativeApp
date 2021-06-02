@@ -50,7 +50,7 @@ export default class CityList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'pink',
   },
   item: {
     flex: 1,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
 
     borderWidth: 1,
-    borderColor: 'orange',
+    borderColor: '#0096c6',
   },
   text: {
     fontSize: 20,
