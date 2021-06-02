@@ -28,7 +28,10 @@ export default class WeatherDetailScreen extends React.Component {
   
       return (
         <View style={styles.container}>
-          <Text>{city}</Text>
+          <Text style={styles.baseText}>I Love 
+          <Text style={styles.innerText}> {city} </Text>
+          ♡
+          </Text>
         </View>
       )
     }
@@ -37,6 +40,18 @@ export default class WeatherDetailScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ddf',
+  },
+  innerText: {
+    fontWeight: 'bold',
+    color: '#faa',
+    fontSize : 50,
+  },
+  baseText: {
+    fontWeight: 'bold',
+    color: '#000',
+    fontSize : 40,
   },
 });
