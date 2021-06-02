@@ -31,12 +31,7 @@ export default class WeatherDetailScreen extends React.Component {
           <Text>{city}</Text>
         </View>
       )
-<<<<<<< HEAD
-  }
-
-=======
     }
->>>>>>> c32ecfbc106ad3cf73198d117890c1219bcad7be
 }
 
 const styles = StyleSheet.create({

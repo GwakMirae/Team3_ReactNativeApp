@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default class CityList extends React.Component {
   constructor(props) {
@@ -40,9 +40,10 @@ export default class CityList extends React.Component {
     return (      
       <FlatList style={styles.container}
                 renderItem={({ item }) => this.renderItem(item)}
-                keyExtractor={item => item}
+                keyExtractor={(item) => String(item.id)}
                 data={this.state.cities}
-      />
+      >
+      </FlatList>
     );
   }
 }
@@ -60,8 +61,17 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#0096c6',
   },
+  
   text: {
     fontSize: 20,
     textAlign: 'center',
-  }
+  },
+  bigBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+  },
 });
