@@ -33,6 +33,7 @@ export default class WeatherDetailScreen extends React.Component {
   }
 
   render() {
+  
     const {
         route: {
           params: { city },
