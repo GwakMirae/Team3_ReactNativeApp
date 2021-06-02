@@ -41,23 +41,11 @@ export default class WeatherDetailScreen extends React.Component {
         navigation,
       } = this.props;
   
-      navigation.setOptions({ title: `Weather Information: ${city}` });
-
-    if (this.state.isLoading) {
       return (
         <View style={styles.container}>
-          <Text>데이터를 불러오는 중입니다.</Text>
+          <Text>{city}</Text>
         </View>
       )
-    }
-
-    let celsius = this.state.main.temp - 273.15;
-
-    return (
-      <View style={styles.container}>
-        <Text>온도: {celsius.toFixed(1)}</Text>
-      </View>
-    );
   }
 
 }
