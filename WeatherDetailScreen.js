@@ -8,10 +8,6 @@ export default class WeatherDetailScreen extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.state = {
-      isLoading: true,
-    };
   }
 
   componentDidMount() {
@@ -20,16 +16,6 @@ export default class WeatherDetailScreen extends React.Component {
         params: { city },
       },
     } = this.props;
-    
-    fetch(queryUrl(city))
-      .then(response => response.json())
-      .then(info => {
-        console.log(info);
-        this.setState({
-          ...info,
-          isLoading: false,
-        });
-      });
   }
 
   render() {
